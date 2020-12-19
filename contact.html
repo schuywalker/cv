@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>contact</title>
+</head>
+
+<body>
+  <center>
+    <h2>Contact Me</h2>
+  </center>
+
+  <p>
+  <ul>
+    <li>My <a href="https://www.linkedin.com/in/schuylerasplin/">linkedin</a> page
+    </li><br>
+    <li>Email me at <a href="schuylerasplin@gmail.com">schuylerasplin@gmail.com</a></li>
+    <br>
+    <li>I don't use any other social media publicly.</li>
+    <br>
+    <li>Click <a href="https://soundcloud.com/">here</a> for my music...</li>
+  </ul>
+  </p>
+  <hr>
+<!-- to learn how to do this you go to Form in elements and then
+click on Input and you can see all the attributes that can go in
+the input space-->
+<form action="mailto:schuylerasplin@gmail.com" method="post" enctype="text/plain">
+  <!-- action ="index.html" ^^^ makes it so submit button
+  sends you back to home page-->
+  <!-- QUESTION why is first line of text not enctype text/plain? the rest is being encoded but that line is still name=first line-->
+  <label>Your Name:</label>
+  <input type="text" name="yourName" value="">
+  <input type="submit" name="">
+  <input type="checkbox" name="" value=""><br>
+  <label>Your Email:</label>
+  <input type="email" name="yourEmailAddress" value=""><br>
+  <label>Your Message:</label><br>
+  <textarea name="yourMessage" rows="10" cols="30"></textarea>
+  <input type="submit" name="">
+  <!-- interesting. on submit, if i leave value in as "" i get a blank button
+  that looks the same as that button attribute, but if i delete value="" then
+  it defaults to submit. same thing if you type submit in for value.-->
+  <!-- password auto masks characters-->
+</form>
+
+</body>
+</html>
